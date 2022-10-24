@@ -2,7 +2,7 @@
 
 ## install python3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
 
-##precisamos executar com o powershell como admin e executar o comando
+##precisamos executar com o powershell como admin e executar o comando e permitir execução para Todos [A]
 
 Set-ExecutionPolicy remoteSigned
 
