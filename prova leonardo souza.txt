@@ -1,0 +1,44 @@
+##Processos para rodar o processo da prova, 
+
+## install python3.8 https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
+
+##precisamos executar com o powershell como admin e executar o comando
+
+Set-ExecutionPolicy remoteSigned
+
+##inicialmente criar o processo de ambiente
+##escolher o diretorio que deseja no caso fiz no c:\script
+##abrir o powershell e executar o comando abaixo
+
+python -m venv env_prova
+
+##comando foi criado o ambiente no qual vamos trabalhar
+##vamos ativar o ambiente no caminho C:\script\env_prova\Scripts devemos executar no powershell 
+
+.\activate
+
+## vamos instalar o django
+
+pip install "django>=3.2,<4.0"
+
+#feito isso vamos criar o projeto simples do site django
+
+django-admin startproject prova_site
+ 
+ ##vamos entrar dentro do projeto e vamos criar e inicializar a database
+ 
+ python manage.py migrate
+ 
+ ##vamos rodar o server 
+ 
+ python manage.py runserver
+  
+ ##feito a instalação e comprovado que esta rodando
+ ##deve se copiar o conteudo da pasta app disponibilizada para a prova para o caminho
+ ##C:\script\env_prova\Scripts\prova_site
+ ## e executar novamente o comando 
+ 
+ python manage.py runserver
+ 
+ ##Deve acessar pelo o endereço http://127.0.0.1:8000/
+  
