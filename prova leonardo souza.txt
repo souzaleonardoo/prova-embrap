@@ -26,6 +26,7 @@ pip install "django>=3.2,<4.0"
 django-admin startproject prova_site
  
  ##vamos entrar dentro do projeto e vamos criar e inicializar a database
+ ##C:\script\env_prova\Scripts\prova_site
  
  python manage.py migrate
  
